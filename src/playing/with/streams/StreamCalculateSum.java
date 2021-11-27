@@ -20,7 +20,7 @@ public class StreamCalculateSum {
      *     A. 0 to tell where to start the count
      *     B. add "a" * "b" together
      *
-     * Example under the hood:
+     * Example under the hood when using reduce():
      * Start of List
      *  0 + 1 = 1
      *  1 + 9 = 10
@@ -36,6 +36,7 @@ public class StreamCalculateSum {
      *
      * */
     return numbers_list.stream().reduce(0, Integer::sum);
+
     // This is the same thing with the above implementation
     // return numbers_list.stream().reduce(0, (a, b) -> a + b);
 
