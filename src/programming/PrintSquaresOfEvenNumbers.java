@@ -10,6 +10,14 @@ public class PrintSquaresOfEvenNumbers {
   }
 
   private static void print_squares_of_even_numbers(List<Integer> numbers) {
+    /* TODO:
+     *    1. stream -> list of numbers.
+     *    2. filter -> and return only even numbers.
+     *    3. map -> and square number (num * num).
+     *    4. forEach -> print each squared number out.
+     *
+     *
+     * */
     numbers.stream().filter(num -> num % 2 == 0).map(num -> num * num).forEach(System.out::println);
   }
 }

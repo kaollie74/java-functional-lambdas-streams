@@ -20,6 +20,9 @@ public class PrintAllCoursesIndividually {
   }
 
   private static void printCourses(List<String> courses) {
+    /* TODO:
+    *  1. print each course out by forEach
+    * */
     courses.forEach(System.out::println);
   }
 }
